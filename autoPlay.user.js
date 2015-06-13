@@ -11,13 +11,13 @@
 // ==/UserScript==
 
 // IMPORTANT: Update the @version property above to a higher number such as 1.1 and 1.2 when you update the script! Otherwise, Tamper / Greasemonkey users will not update automatically.
+var clicker_clickRate = 10;
+var clicker_logLevel = 1; // 5 is the most verbose, 0 disables all log
 
 (function(w) {
 "use strict";
 
 var isAlreadyRunning = false;
-var clickRate = 10;
-var logLevel = 1; // 5 is the most verbose, 0 disables all log
 var removeInterface = false; // get rid of a bunch of pointless DOM
 
 var optimizeGraphics = true; //set this to false if you don't want effects disabled (introduces memory leak.)
