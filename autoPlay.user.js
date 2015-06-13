@@ -333,7 +333,7 @@ function goToLaneWithBestTarget() {
 
 		// target the enemy of the specified type with the lowest hp
 		var mostHPDone = 0;
-		for (var i = 0; i < enemies.length; i++) {
+		for (i = 0; i < enemies.length; i++) {
 		    if (enemies[i] && !enemies[i].m_bIsDestroyed) {
 		        // Only select enemy and lane if the preferedLane matches the potential enemy lane
 		        if(lowHP < 1 || enemies[i].m_flDisplayedHP < lowHP) {
